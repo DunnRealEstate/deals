@@ -130,29 +130,31 @@
   "agent_phone": "",
   "vendors": [
     {
+      "role": "Insurance",
+      "name": "Patrick Wertzberger, Farmers",
+      "contact": "(913) 383-3276",
+      "url": "https://agents.farmers.com/ks/overland-park/patrick-wertzberger/"
+    },
+    {
+      "role": "Moving Company",
+      "name": "Moving Proz",
+      "contact": "(816) 945-6333",
+      "url": "https://movingproz.com/kansas-city/"
+    },
+    {
       "role": "House Cleaning",
       "name": "Fernanda Melo",
       "contact": "(913) 257-6442"
     },
     {
-      "role": "Junk Removal",
-      "name": "Cut Rate Junk Removal / Eric",
-      "contact": "(913) 961-6219"
+      "role": "Painting",
+      "name": "Daniel Munoz",
+      "contact": "(913) 915-0281"
     },
     {
       "role": "Lawn Care",
       "name": "Edy's Lawn Care",
       "contact": "(913) 226-2452"
-    },
-    {
-      "role": "Handyman",
-      "name": "Jose Does it All / Jose",
-      "contact": "(816) 785-5452"
-    },
-    {
-      "role": "Painting",
-      "name": "Daniel Munoz",
-      "contact": "(913) 915-0281"
     }
   ]
 }
