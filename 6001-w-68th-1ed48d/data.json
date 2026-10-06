@@ -1,0 +1,158 @@
+{
+  "side": "buyer",
+  "property_address": "6001 W 68th St, Overland Park, KS 66204",
+  "client_names": "Laura & Kyle Hines",
+  "generated_date": "October 6, 2026",
+  "intro_text": "Here's everything between now and getting your keys. Most of the hard stuff is behind us. I'll keep this updated as the last few pieces land, so check back whenever you want to know where things stand.",
+  "key_dates": [
+    {
+      "label": "Final Walkthrough",
+      "value": "Fri, Oct 16",
+      "sub": "8:30 am"
+    },
+    {
+      "label": "Closing",
+      "value": "Fri, Oct 16",
+      "sub": "9:00 am at Platinum Title"
+    },
+    {
+      "label": "Keys",
+      "value": "At funding",
+      "sub": "Same day as closing"
+    }
+  ],
+  "phases": [
+    {
+      "name": "Contract & Inspections",
+      "milestones": [
+        {
+          "label": "Offer accepted",
+          "date": "Complete",
+          "status": "done"
+        },
+        {
+          "label": "Earnest money delivered",
+          "date": "Fri, Sept 11",
+          "status": "done"
+        },
+        {
+          "label": "Inspection period",
+          "date": "Ended Fri, Sept 18",
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "name": "Insurance, Appraisal & Loan",
+      "milestones": [
+        {
+          "label": "Homeowners insurance secured",
+          "date": "Before closing",
+          "status": "not_started",
+          "note": "Send the policy to your lender once it's bound."
+        },
+        {
+          "label": "Appraisal",
+          "date": "Waived",
+          "status": "done",
+          "note": ""
+        },
+        {
+          "label": "Loan approval",
+          "date": "Complete",
+          "status": "done"
+        },
+        {
+          "label": "Clear to close",
+          "date": "TBD",
+          "status": "not_started",
+          "note": "The lender's final sign-off. Once this comes in, we're basically there."
+        },
+        {
+          "label": "Review your closing disclosure",
+          "date": "At least 3 days before closing",
+          "status": "not_started",
+          "note": "Your final numbers. Read it when it lands and send me anything that looks off."
+        }
+      ]
+    },
+    {
+      "name": "Closing",
+      "milestones": [
+        {
+          "label": "Utilities and mail forwarding set up",
+          "date": "Complete",
+          "status": "done",
+          "note": "You two are ahead of the game on this one."
+        },
+        {
+          "label": "Final walkthrough",
+          "date": "Fri, Oct 16 at 8:30 am",
+          "status": "scheduled",
+          "note": "We'll make sure the house is in the same shape you remember it."
+        },
+        {
+          "label": "Closing",
+          "date": "Fri, Oct 16 at 9:00 am",
+          "status": "scheduled",
+          "note": "Platinum Title, 10895 Lowell Ave, Suite 100, Overland Park (APEX 2 Building). Plan on 45 minutes to an hour."
+        },
+        {
+          "label": "Keys & possession",
+          "date": "At funding",
+          "status": "not_started"
+        }
+      ]
+    }
+  ],
+  "agent_notes": "",
+  "checklist_title": "Before Closing Day",
+  "checklist_items": [
+    "Lock in homeowners insurance and send the policy to your lender",
+    "Don't open new credit, change jobs, or make big purchases until after closing",
+    "Answer lender requests quickly. Underwriting moves at the speed of your inbox",
+    "Review your closing disclosure as soon as it arrives and send me any questions",
+    "Never act on wiring instructions sent by email. Call Platinum Title at 913-491-5001 to confirm before sending a dime",
+    "Bring a photo ID to closing",
+    "Plan the move for after you have keys, not before"
+  ],
+  "team": [
+    {
+      "role": "Title / Escrow",
+      "name": "Cristin Hartranft, Platinum Title",
+      "contact": "913-491-5001 · cristin@platinumtitlellc.com"
+    }
+  ],
+  "note_text": "Dates are estimates and can shift with lender, appraisal, and title timelines. I'll update this page as things move, so there's no need to track any of this yourself.",
+  "agent_name": "Jared Dunn",
+  "brokerage": "Real Broker",
+  "agent_email": "jared@jareddunn.com",
+  "agent_phone": "",
+  "vendors": [
+    {
+      "role": "House Cleaning",
+      "name": "Fernanda Melo",
+      "contact": "(913) 257-6442"
+    },
+    {
+      "role": "Junk Removal",
+      "name": "Cut Rate Junk Removal / Eric",
+      "contact": "(913) 961-6219"
+    },
+    {
+      "role": "Lawn Care",
+      "name": "Edy's Lawn Care",
+      "contact": "(913) 226-2452"
+    },
+    {
+      "role": "Handyman",
+      "name": "Jose Does it All / Jose",
+      "contact": "(816) 785-5452"
+    },
+    {
+      "role": "Painting",
+      "name": "Daniel Munoz",
+      "contact": "(913) 915-0281"
+    }
+  ]
+}
