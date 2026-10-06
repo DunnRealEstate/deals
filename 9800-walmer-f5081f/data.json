@@ -126,7 +126,13 @@
     "Bring a photo ID to closing",
     "Never act on wiring instructions sent by email. If anything about your proceeds changes, call the title company at a number you already have"
   ],
-  "team": [],
+  "team": [
+    {
+      "role": "Transaction Coordinator",
+      "name": "Sarah Fourt",
+      "contact": "sarah@executiveassistkc.com"
+    }
+  ],
   "note_text": "Dates are estimates and can shift with lender, appraisal, and title timelines. I'll update this page as things move, so there's no need to track any of this yourself.",
   "agent_name": "Jared Dunn",
   "brokerage": "Real Broker",
