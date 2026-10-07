@@ -181,6 +181,54 @@
     .keydate { border-right: none; border-bottom: 1px solid var(--line); }
     .keydate:last-child { border-bottom: none; }
   }
+
+  /* v2 additions */
+  .keydate-countdown .keydate-value { color: var(--green); }
+  .cal-sub { margin-top: 18px; font-size: 13px; color: var(--text-muted); }
+  .cal-sub-text { margin: 0 0 8px; }
+  .cal-sub-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 4px;
+    font-size: 13px; font-weight: 700; text-decoration: none; border: 1px solid var(--slate);
+    color: var(--slate); background: #fff; cursor: pointer; font-family: inherit;
+  }
+  .btn-solid { background: var(--slate); color: #fff; }
+  .phase-done { margin-top: 26px; }
+  .phase-done > summary {
+    list-style: none; cursor: pointer; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .phase-done > summary::-webkit-details-marker { display: none; }
+  .phase-done .phase-title { background: var(--red); }
+  .done-summary { font-size: 13px; color: var(--red); font-weight: 700; }
+  .done-toggle { font-size: 12px; color: var(--text-muted); text-decoration: underline; }
+  .phase-done[open] .done-toggle .show { display: none; }
+  .phase-done:not([open]) .done-toggle .hide { display: none; }
+  .info-btn {
+    display: inline-flex; align-items: center; justify-content: center; width: 17px; height: 17px;
+    border-radius: 50%; border: 1.5px solid var(--taupe); color: var(--taupe); background: #fff;
+    font-size: 11px; font-weight: 700; margin-left: 6px; cursor: pointer; vertical-align: 1px; padding: 0;
+    font-family: inherit;
+  }
+  .info-text {
+    display: none; margin-top: 6px; font-size: 13px; line-height: 1.5; color: var(--slate-dark);
+    background: var(--taupe-light); border-radius: 4px; padding: 8px 10px;
+  }
+  .milestone.show-info .info-text { display: block; }
+  .add-cal { margin-top: 5px; font-size: 12px; }
+  .add-cal a { color: var(--slate); font-weight: 700; margin-right: 10px; }
+  .contact-bar { display: none; }
+  @media (max-width: 600px) {
+    body { padding-bottom: 64px; }
+    .contact-bar {
+      display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+      background: var(--slate-dark); border-top: 3px solid var(--taupe);
+    }
+    .contact-bar a {
+      flex: 1; text-align: center; color: #fff; text-decoration: none; font-weight: 700;
+      font-size: 14px; padding: 14px 0; border-right: 1px solid rgba(255,255,255,0.15);
+    }
+    .contact-bar a:last-child { border-right: none; }
+  }
 </style>
 </head>
 <body>
@@ -195,7 +243,8 @@
       <h1 class="property">9800 Walmer St, Overland Park, KS 66212</h1>
       <p class="client-names">Prepared for Nick Zelie</p>
       <p class="intro">We&#x27;re under contract. This is everything between now and closing, what&#x27;s done and what&#x27;s coming. I&#x27;ll keep it updated as dates firm up, so check back whenever you want to know where things stand.</p>
-      <div class="keydates"><div class="keydate"><p class="keydate-label">Under Contract</p><p class="keydate-value">Mon, Sept 21</p></div><div class="keydate"><p class="keydate-label">Appraisal</p><p class="keydate-value">Wed, Oct 7</p><p class="keydate-sub">8:30 am</p></div><div class="keydate"><p class="keydate-label">Closing</p><p class="keydate-value">Mon, Nov 2</p><p class="keydate-sub">5:00 pm</p></div><div class="keydate"><p class="keydate-label">Possession</p><p class="keydate-value">At closing</p><p class="keydate-sub">Buyers get keys Nov 2</p></div></div>
+      <div class="keydates"><div class="keydate keydate-countdown" id="countdown" data-date="2026-11-02"><p class="keydate-label">Countdown</p><p class="keydate-value">&nbsp;</p><p class="keydate-sub">&nbsp;</p></div><div class="keydate"><p class="keydate-label">Under Contract</p><p class="keydate-value">Mon, Sept 21</p></div><div class="keydate"><p class="keydate-label">Appraisal</p><p class="keydate-value">Wed, Oct 7</p><p class="keydate-sub">8:30 am</p></div><div class="keydate"><p class="keydate-label">Closing</p><p class="keydate-value">Mon, Nov 2</p><p class="keydate-sub">5:00 pm</p></div><div class="keydate"><p class="keydate-label">Possession</p><p class="keydate-value">At closing</p><p class="keydate-sub">Buyers get keys Nov 2</p></div></div>
+      <div class="cal-sub"><p class="cal-sub-text">Put these dates in your calendar. They update automatically when I update this page.</p><div class="cal-sub-btns"><a class="btn btn-solid" href="webcal://dunnrealestate.github.io/deals/9800-walmer-f5081f/calendar.ics">Add to Apple / Outlook</a><a class="btn" href="https://calendar.google.com/calendar/r?cid=webcal%3A%2F%2Fdunnrealestate.github.io%2Fdeals%2F9800-walmer-f5081f%2Fcalendar.ics" target="_blank" rel="noopener">Add to Google Calendar</a></div></div>
       <div class="progress-wrap"><div class="progress-head"><span><strong>5 of 13</strong> steps complete</span><span>38%</span></div><div class="progress-bar"><div class="progress-fill" style="width:38%"></div></div><div class="nextup"><p class="nextup-label">Happening now</p><p class="nextup-title">Agreed repairs completed</p><p class="nextup-when">Before closing</p><p class="nextup-note">Dishwasher is the last open item. Hang on to receipts for anything that gets done.</p></div></div>
       <div class="legend">
         <span><i class="dot done"></i>Complete</span>
@@ -203,7 +252,7 @@
         <span><i class="dot scheduled"></i>Scheduled</span>
         <span><i class="dot not_started"></i>Coming up</span>
       </div>
-      <div class="phase"><div class="phase-title">Contract &amp; Inspections</div><div class="milestones"><div class="milestone done"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Offer accepted<span class="status-chip">Complete</span></div><div class="milestone-date">Mon, Sept 21</div></div></div><div class="milestone done"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Buyer&#x27;s earnest money deposited<span class="status-chip">Complete</span></div><div class="milestone-date">Thu, Sept 24</div></div></div><div class="milestone done"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Buyer&#x27;s inspections<span class="status-chip">Complete</span></div><div class="milestone-date">Sept 23 &amp; 24</div></div></div><div class="milestone done"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Inspection resolution signed<span class="status-chip">Complete</span></div><div class="milestone-date">Tue, Sept 29</div></div><div class="milestone-note">Inspection period closed Oct 1.</div></div><div class="milestone in_progress"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Agreed repairs completed<span class="status-chip">In progress</span></div><div class="milestone-date">Before closing</div></div><div class="milestone-note">Dishwasher is the last open item. Hang on to receipts for anything that gets done.</div></div></div></div><div class="phase"><div class="phase-title">Title, Appraisal &amp; Loan</div><div class="milestones"><div class="milestone done"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Title commitment<span class="status-chip">Complete</span></div><div class="milestone-date">Fri, Sept 25</div></div></div><div class="milestone scheduled"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Appraisal<span class="status-chip">Scheduled</span></div><div class="milestone-date">Wed, Oct 7 at 8:30 am</div></div><div class="milestone-note">The appraiser needs to get inside. Same prep as a showing works fine.</div></div><div class="milestone not_started"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Buyer&#x27;s loan approval<span class="status-chip">Coming up</span></div><div class="milestone-date">TBD</div></div><div class="milestone-note">This one&#x27;s on the buyer&#x27;s lender. I&#x27;ll update it as soon as I hear.</div></div><div class="milestone not_started"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Clear to close<span class="status-chip">Coming up</span></div><div class="milestone-date">TBD</div></div></div></div></div><div class="phase"><div class="phase-title">Closing</div><div class="milestones"><div class="milestone not_started"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Utilities transferred out of your name<span class="status-chip">Coming up</span></div><div class="milestone-date">Effective Nov 2</div></div></div><div class="milestone not_started"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Move out<span class="status-chip">Coming up</span></div><div class="milestone-date">Before the final walkthrough</div></div></div><div class="milestone not_started"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Buyer&#x27;s final walkthrough<span class="status-chip">Coming up</span></div><div class="milestone-date">TBD</div></div><div class="milestone-note">Usually the day of closing or the day before.</div></div><div class="milestone scheduled"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Closing &amp; possession<span class="status-chip">Scheduled</span></div><div class="milestone-date">Mon, Nov 2 at 5:00 pm</div></div></div></div></div>
+      <div class="phase"><div class="phase-title">Contract &amp; Inspections</div><div class="milestones"><div class="milestone done"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Offer accepted<span class="status-chip">Complete</span><button class="info-btn" type="button" aria-label="What is this?" aria-expanded="false">?</button></div><div class="milestone-date">Mon, Sept 21</div></div><div class="info-text">Both sides signed the contract. Every other deadline counts from this day.</div></div><div class="milestone done"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Buyer&#x27;s earnest money deposited<span class="status-chip">Complete</span><button class="info-btn" type="button" aria-label="What is this?" aria-expanded="false">?</button></div><div class="milestone-date">Thu, Sept 24</div></div><div class="info-text">The buyer&#x27;s good-faith deposit, held by the title company. It shows they&#x27;re committed.</div></div><div class="milestone done"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Buyer&#x27;s inspections<span class="status-chip">Complete</span><button class="info-btn" type="button" aria-label="What is this?" aria-expanded="false">?</button></div><div class="milestone-date">Sept 23 &amp; 24</div></div><div class="info-text">The buyer&#x27;s inspector goes through the house. You don&#x27;t need to be there.</div></div><div class="milestone done"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Inspection resolution signed<span class="status-chip">Complete</span><button class="info-btn" type="button" aria-label="What is this?" aria-expanded="false">?</button></div><div class="milestone-date">Tue, Sept 29</div></div><div class="milestone-note">Inspection period closed Oct 1.</div><div class="info-text">The signed agreement on which repairs or credits the seller is giving you.</div></div><div class="milestone in_progress"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Agreed repairs completed<span class="status-chip">In progress</span><button class="info-btn" type="button" aria-label="What is this?" aria-expanded="false">?</button></div><div class="milestone-date">Before closing</div></div><div class="milestone-note">Dishwasher is the last open item. Hang on to receipts for anything that gets done.</div><div class="info-text">The repairs you agreed to in the inspection resolution. Keep receipts, the buyer may ask for them.</div></div></div></div><div class="phase"><div class="phase-title">Title, Appraisal &amp; Loan</div><div class="milestones"><div class="milestone done"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Title commitment<span class="status-chip">Complete</span><button class="info-btn" type="button" aria-label="What is this?" aria-expanded="false">?</button></div><div class="milestone-date">Fri, Sept 25</div></div><div class="info-text">The title company&#x27;s report confirming the seller can legally hand the house over, and what gets paid off at closing.</div></div><div class="milestone scheduled"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Appraisal<span class="status-chip">Scheduled</span><button class="info-btn" type="button" aria-label="What is this?" aria-expanded="false">?</button></div><div class="milestone-date">Wed, Oct 7 at 8:30 am</div></div><div class="milestone-note">The appraiser needs to get inside. Same prep as a showing works fine.</div><div class="info-text">An independent check that the house is worth what&#x27;s being paid for it. When it&#x27;s waived, the lender didn&#x27;t require one.</div><div class="add-cal"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Appraisal+%289800+Walmer+St%29&amp;dates=20261007T083000%2F20261007T093000&amp;ctz=America%2FChicago&amp;details=The+appraiser+needs+to+get+inside.+Same+prep+as+a+showing+works+fine.&amp;location=9800+Walmer+St%2C+Overland+Park%2C+KS+66212" target="_blank" rel="noopener">+ Google Calendar</a><a href="cal/appraisal.ics">+ Apple / Outlook</a></div></div><div class="milestone not_started"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Buyer&#x27;s loan approval<span class="status-chip">Coming up</span><button class="info-btn" type="button" aria-label="What is this?" aria-expanded="false">?</button></div><div class="milestone-date">TBD</div></div><div class="milestone-note">This one&#x27;s on the buyer&#x27;s lender. I&#x27;ll update it as soon as I hear.</div><div class="info-text">The buyer&#x27;s lender approving their loan. Nothing for you to do here.</div></div><div class="milestone not_started"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Clear to close<span class="status-chip">Coming up</span><button class="info-btn" type="button" aria-label="What is this?" aria-expanded="false">?</button></div><div class="milestone-date">TBD</div></div><div class="info-text">The lender&#x27;s final sign-off. Every condition is met and the loan is ready to fund.</div></div></div></div><div class="phase"><div class="phase-title">Closing</div><div class="milestones"><div class="milestone not_started"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Utilities transferred out of your name<span class="status-chip">Coming up</span><button class="info-btn" type="button" aria-label="What is this?" aria-expanded="false">?</button></div><div class="milestone-date">Effective Nov 2</div></div><div class="info-text">Set shutoff or transfer for closing day, not before, so the walkthrough has power and water.</div></div><div class="milestone not_started"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Move out<span class="status-chip">Coming up</span><button class="info-btn" type="button" aria-label="What is this?" aria-expanded="false">?</button></div><div class="milestone-date">Before the final walkthrough</div></div><div class="info-text">Everything that isn&#x27;t staying with the house needs to be out before the buyer&#x27;s walkthrough.</div></div><div class="milestone not_started"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Buyer&#x27;s final walkthrough<span class="status-chip">Coming up</span><button class="info-btn" type="button" aria-label="What is this?" aria-expanded="false">?</button></div><div class="milestone-date">TBD</div></div><div class="milestone-note">Usually the day of closing or the day before.</div><div class="info-text">The buyer&#x27;s last look to confirm the house is in the agreed condition.</div></div><div class="milestone scheduled"><span class="marker"></span><div class="milestone-row"><div class="milestone-label">Closing &amp; possession<span class="status-chip">Scheduled</span><button class="info-btn" type="button" aria-label="What is this?" aria-expanded="false">?</button></div><div class="milestone-date">Mon, Nov 2 at 5:00 pm</div></div><div class="info-text">You sign at the title company, the buyer&#x27;s loan funds, and the keys change hands.</div><div class="add-cal"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Closing+%26+possession+%289800+Walmer+St%29&amp;dates=20261102T170000%2F20261102T180000&amp;ctz=America%2FChicago&amp;details=" target="_blank" rel="noopener">+ Google Calendar</a><a href="cal/closing-possession.ics">+ Apple / Outlook</a></div></div></div></div>
       
       <div class="checklist"><h2>Before Closing Day</h2><ul><li>Schedule gas, electric, water, trash, and internet to come out of your name on Nov 2 (not before)</li><li>Set up mail forwarding with USPS</li><li>Keep homeowners insurance active through closing. Cancel it after, not before</li><li>Take everything that isn&#x27;t staying with the house per the contract</li><li>Have the house professionally cleaned, including inside the oven, fridge, and all drawers</li><li>Leave all keys, garage door openers, and mailbox keys on the kitchen counter</li><li>Leave appliance manuals and any warranty paperwork in a kitchen drawer</li><li>Keep receipts for any repairs from the inspection resolution</li><li>Bring a photo ID to closing</li><li>Never act on wiring instructions sent by email. If anything about your proceeds changes, call the title company at a number you already have</li></ul></div>
       <div class="team"><h2>Who's Involved</h2><div class="team-grid"><div class="team-card"><div class="team-role">Transaction Coordinator</div><div class="team-name">Sarah Fourt</div><div class="team-contact">sarah@executiveassistkc.com</div></div></div></div>
@@ -215,12 +264,36 @@
         <div class="footer-contact">
           <div class="name">Jared Dunn</div>
           <div>Real Broker</div>
-          <div><a href="mailto:jared@jareddunn.com">jared@jareddunn.com</a></div>
+          <div><a href="mailto:jared@jareddunn.com">jared@jareddunn.com</a> · (785) 766-5087</div>
         </div>
       </div>
       <div class="footer-vendors"><p class="footer-vendors-label">Recommended Vendors</p><div class="footer-vendors-list"><div class="footer-vendor"><div class="vendor-role">House Cleaning</div><div class="vendor-name">Fernanda Melo</div><div>(913) 257-6442</div></div><div class="footer-vendor"><div class="vendor-role">Junk Removal</div><div class="vendor-name">Cut Rate Junk Removal / Eric</div><div>(913) 961-6219</div></div><div class="footer-vendor"><div class="vendor-role">Lawn Care</div><div class="vendor-name">Edy&#x27;s Lawn Care</div><div>(913) 226-2452</div></div><div class="footer-vendor"><div class="vendor-role">Handyman</div><div class="vendor-name">Jose Does it All / Jose</div><div>(816) 785-5452</div></div><div class="footer-vendor"><div class="vendor-role">Painting</div><div class="vendor-name">Daniel Munoz</div><div>(913) 915-0281</div></div></div></div>
     </footer>
   </div>
+  <nav class="contact-bar"><a href="sms:+17857665087">Text Jared</a><a href="tel:+17857665087">Call</a><a href="mailto:jared@jareddunn.com">Email</a></nav>
+  <script>
+    (function () {
+      // Closing countdown, computed live so it never goes stale
+      var el = document.getElementById('countdown');
+      if (el) {
+        var target = new Date(el.getAttribute('data-date') + 'T00:00:00');
+        var now = new Date(); now.setHours(0,0,0,0);
+        var days = Math.round((target - now) / 86400000);
+        var v = el.querySelector('.keydate-value'), s = el.querySelector('.keydate-sub');
+        if (days > 1) { v.textContent = days + ' days'; s.textContent = 'until closing'; }
+        else if (days === 1) { v.textContent = 'Tomorrow'; s.textContent = 'is closing day'; }
+        else if (days === 0) { v.textContent = 'Today'; s.textContent = 'is closing day'; }
+        else { v.textContent = 'Closed'; s.textContent = 'Congrats!'; }
+      }
+      // "What's this?" toggles
+      document.querySelectorAll('.info-btn').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var m = b.closest('.milestone'); m.classList.toggle('show-info');
+          b.setAttribute('aria-expanded', m.classList.contains('show-info'));
+        });
+      });
+    })();
+  </script>
   <script>
     (function () {
       function sendHeight() {

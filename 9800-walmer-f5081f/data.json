@@ -37,7 +37,8 @@
         {
           "label": "Buyer's earnest money deposited",
           "date": "Thu, Sept 24",
-          "status": "done"
+          "status": "done",
+          "start": "2026-09-24"
         },
         {
           "label": "Buyer's inspections",
@@ -70,7 +71,10 @@
           "label": "Appraisal",
           "date": "Wed, Oct 7 at 8:30 am",
           "status": "scheduled",
-          "note": "The appraiser needs to get inside. Same prep as a showing works fine."
+          "note": "The appraiser needs to get inside. Same prep as a showing works fine.",
+          "start": "2026-10-07T08:30",
+          "minutes": 60,
+          "location": "9800 Walmer St, Overland Park, KS 66212"
         },
         {
           "label": "Buyer's loan approval",
@@ -107,7 +111,9 @@
         {
           "label": "Closing & possession",
           "date": "Mon, Nov 2 at 5:00 pm",
-          "status": "scheduled"
+          "status": "scheduled",
+          "start": "2026-11-02T17:00",
+          "minutes": 60
         }
       ]
     }
@@ -137,7 +143,7 @@
   "agent_name": "Jared Dunn",
   "brokerage": "Real Broker",
   "agent_email": "jared@jareddunn.com",
-  "agent_phone": "",
+  "agent_phone": "(785) 766-5087",
   "vendors": [
     {
       "role": "House Cleaning",
@@ -164,5 +170,6 @@
       "name": "Daniel Munoz",
       "contact": "(913) 915-0281"
     }
-  ]
+  ],
+  "closing_date": "2026-11-02"
 }

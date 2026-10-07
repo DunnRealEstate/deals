@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>{{PROPERTY_ADDRESS}} - Under Contract</title>
+<style>
+  :root {
+    --slate: #394753;
+    --slate-dark: #2b3540;
+    --taupe: #8C7F75;
+    --taupe-light: #F3F0EE;
+    --bg: #FFFFFF;
+    --text-muted: #6b7480;
+    --line: #E4DFDA;
+    --green: #3A8253;
+    --red: #A3352E;
+    --amber: #B4780F;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: var(--slate-dark);
+    background: #FAFAF9;
+  }
+  .topbar { height: 6px; background: var(--taupe); }
+  .wrap { max-width: 760px; margin: 0 auto; background: var(--bg); }
+  header {
+    padding: 36px 40px 28px;
+    border-bottom: 1px solid var(--line);
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 24px; flex-wrap: wrap;
+  }
+  header img.logo { height: 64px; }
+  .updated { font-size: 12px; color: var(--text-muted); text-align: right; }
+  main { padding: 8px 40px 12px; }
+  .eyebrow {
+    text-transform: uppercase; letter-spacing: 0.12em; font-size: 11px;
+    font-weight: 700; color: var(--taupe); margin: 24px 0 6px;
+  }
+  h1.property { font-size: 22px; margin: 0 0 4px; font-weight: 700; }
+  .client-names { font-size: 14px; color: var(--text-muted); margin: 0; }
+  .intro { font-size: 14px; line-height: 1.6; color: var(--text-muted); padding: 16px 0 0; margin: 0; }
+
+  /* Key dates strip */
+  .keydates {
+    margin-top: 24px;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    border: 1px solid var(--line); border-radius: 6px; overflow: hidden;
+  }
+  .keydate { padding: 14px 18px; border-right: 1px solid var(--line); }
+  .keydate:last-child { border-right: none; }
+  .keydate-label {
+    text-transform: uppercase; letter-spacing: 0.1em; font-size: 10.5px;
+    font-weight: 700; color: var(--taupe); margin: 0 0 4px;
+  }
+  .keydate-value { font-size: 16px; font-weight: 700; margin: 0; }
+  .keydate-sub { font-size: 12.5px; color: var(--text-muted); margin: 2px 0 0; }
+
+  /* Progress + next up */
+  .progress-wrap { margin-top: 26px; }
+  .progress-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 13px; color: var(--text-muted); margin-bottom: 8px;
+  }
+  .progress-head strong { color: var(--slate-dark); font-size: 14px; }
+  .progress-bar { height: 8px; background: var(--taupe-light); border-radius: 4px; overflow: hidden; }
+  .progress-fill { height: 100%; background: var(--slate); border-radius: 4px; }
+  .nextup {
+    margin-top: 18px; background: var(--slate); color: #fff;
+    border-radius: 6px; padding: 18px 22px;
+  }
+  .nextup-label {
+    text-transform: uppercase; letter-spacing: 0.12em; font-size: 10.5px;
+    font-weight: 700; color: rgba(255,255,255,0.65); margin: 0 0 6px;
+  }
+  .nextup-title { font-size: 18px; font-weight: 700; margin: 0; }
+  .nextup-when { font-size: 14px; margin: 4px 0 0; color: rgba(255,255,255,0.85); }
+  .nextup-note { font-size: 13px; margin: 8px 0 0; color: rgba(255,255,255,0.75); line-height: 1.5; }
+
+  /* Legend */
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 6px 18px;
+    margin-top: 28px; font-size: 12px; color: var(--text-muted);
+  }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; background: var(--slate); }
+  .dot.done { background: var(--red); }
+  .dot.in_progress { background: var(--green); }
+  .dot.scheduled { background: var(--amber); }
+  .dot.not_started { background: #fff; border: 2px solid var(--taupe); }
+
+  /* Timeline */
+  .phase { margin-top: 26px; }
+  .phase-title {
+    display: inline-block; background: var(--slate); color: #fff; font-size: 13px;
+    font-weight: 700; letter-spacing: 0.03em; padding: 6px 14px; border-radius: 3px;
+  }
+  .milestones { margin-top: 14px; border-left: 2px solid var(--line); }
+  .milestone { position: relative; padding: 12px 0 12px 26px; border-bottom: 1px solid var(--line); }
+  .milestone:last-child { border-bottom: none; }
+  .milestone .marker {
+    position: absolute; left: -8px; top: 16px; width: 14px; height: 14px;
+    border-radius: 50%; background: #fff; border: 2px solid var(--taupe);
+  }
+  .milestone.done .marker { background: var(--red); border-color: var(--red); box-shadow: 0 0 0 3px rgba(163,53,46,0.18); }
+  .milestone.in_progress .marker { background: var(--green); border-color: var(--green); box-shadow: 0 0 0 3px rgba(58,130,83,0.2); }
+  .milestone.scheduled .marker { background: var(--amber); border-color: var(--amber); box-shadow: 0 0 0 3px rgba(180,120,15,0.2); }
+  .milestone-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+  .milestone-label { font-size: 15px; font-weight: 600; }
+  .milestone.done .milestone-label { text-decoration: line-through; color: var(--red); }
+  .milestone-date { font-size: 13px; font-weight: 700; color: var(--taupe); text-align: right; }
+  .milestone.done .milestone-date { color: var(--red); }
+  .milestone.in_progress .milestone-date { color: var(--green); }
+  .milestone.scheduled .milestone-date { color: var(--amber); }
+  .status-chip {
+    display: inline-block; font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em;
+    text-transform: uppercase; padding: 2px 7px; border-radius: 10px; margin-left: 8px;
+    vertical-align: 2px; background: var(--taupe-light); color: var(--taupe);
+  }
+  .milestone.done .status-chip { background: rgba(163,53,46,0.1); color: var(--red); }
+  .milestone.in_progress .status-chip { background: rgba(58,130,83,0.12); color: var(--green); }
+  .milestone.scheduled .status-chip { background: rgba(180,120,15,0.12); color: var(--amber); }
+  .milestone-note { font-size: 13px; color: var(--text-muted); margin-top: 3px; line-height: 1.5; }
+
+  .agent-notes {
+    margin: 28px 0 0; background: var(--taupe-light); border-left: 5px solid var(--taupe);
+    border-radius: 4px; padding: 16px 20px;
+  }
+  .agent-notes-label {
+    text-transform: uppercase; letter-spacing: 0.1em; font-size: 11px;
+    font-weight: 700; color: var(--taupe); margin: 0 0 8px;
+  }
+  .agent-notes-text { font-size: 15px; font-weight: 600; line-height: 1.6; margin: 0; white-space: pre-line; }
+
+  .checklist {
+    margin-top: 32px; background: var(--taupe-light); border-left: 4px solid var(--taupe);
+    border-radius: 4px; padding: 22px 26px;
+  }
+  .checklist h2 { font-size: 15px; margin: 0 0 12px; }
+  .checklist ul { margin: 0; padding: 0; list-style: none; }
+  .checklist li { font-size: 14px; line-height: 1.5; padding: 6px 0 6px 26px; position: relative; }
+  .checklist li::before {
+    content: ""; position: absolute; left: 0; top: 8px; width: 14px; height: 14px;
+    border: 2px solid var(--taupe); border-radius: 3px; background: #fff;
+  }
+
+  .team { margin-top: 32px; }
+  .team h2 { font-size: 15px; margin: 0 0 12px; }
+  .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .team-card { border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; font-size: 13px; line-height: 1.5; }
+  .team-role { text-transform: uppercase; letter-spacing: 0.08em; font-size: 10.5px; font-weight: 700; color: var(--taupe); }
+  .team-name { font-weight: 700; font-size: 14px; }
+  .team-contact { color: var(--text-muted); word-break: break-word; }
+
+  .note-box {
+    margin-top: 28px; font-size: 12.5px; color: var(--text-muted); line-height: 1.6;
+    padding: 16px 0 4px; border-top: 1px solid var(--line);
+  }
+  footer { margin-top: 20px; background: var(--slate-dark); color: #fff; padding: 28px 40px; }
+  .footer-main { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; justify-content: space-between; }
+  footer img.icon { height: 34px; opacity: 0.9; }
+  .footer-contact { font-size: 13px; line-height: 1.6; }
+  .footer-contact .name { font-weight: 700; font-size: 14px; }
+  .footer-contact a { color: #fff; text-decoration: underline; }
+  .footer-vendors { margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.15); }
+  .footer-vendors-label {
+    text-transform: uppercase; letter-spacing: 0.1em; font-size: 10.5px;
+    font-weight: 700; color: var(--taupe); margin: 0 0 10px;
+  }
+  .footer-vendors-list { display: flex; flex-wrap: wrap; gap: 10px 28px; }
+  .footer-vendor { font-size: 12.5px; line-height: 1.5; }
+  .footer-vendor .vendor-role { color: rgba(255,255,255,0.6); }
+  .footer-vendor .vendor-name { font-weight: 700; }
+  .footer-vendor a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
+  @media (max-width: 600px) {
+    header, main, footer { padding-left: 22px; padding-right: 22px; }
+    .updated { text-align: left; }
+    .keydate { border-right: none; border-bottom: 1px solid var(--line); }
+    .keydate:last-child { border-bottom: none; }
+  }
+
+  /* v2 additions */
+  .keydate-countdown .keydate-value { color: var(--green); }
+  .cal-sub { margin-top: 18px; font-size: 13px; color: var(--text-muted); }
+  .cal-sub-text { margin: 0 0 8px; }
+  .cal-sub-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 4px;
+    font-size: 13px; font-weight: 700; text-decoration: none; border: 1px solid var(--slate);
+    color: var(--slate); background: #fff; cursor: pointer; font-family: inherit;
+  }
+  .btn-solid { background: var(--slate); color: #fff; }
+  .phase-done { margin-top: 26px; }
+  .phase-done > summary {
+    list-style: none; cursor: pointer; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .phase-done > summary::-webkit-details-marker { display: none; }
+  .phase-done .phase-title { background: var(--red); }
+  .done-summary { font-size: 13px; color: var(--red); font-weight: 700; }
+  .done-toggle { font-size: 12px; color: var(--text-muted); text-decoration: underline; }
+  .phase-done[open] .done-toggle .show { display: none; }
+  .phase-done:not([open]) .done-toggle .hide { display: none; }
+  .info-btn {
+    display: inline-flex; align-items: center; justify-content: center; width: 17px; height: 17px;
+    border-radius: 50%; border: 1.5px solid var(--taupe); color: var(--taupe); background: #fff;
+    font-size: 11px; font-weight: 700; margin-left: 6px; cursor: pointer; vertical-align: 1px; padding: 0;
+    font-family: inherit;
+  }
+  .info-text {
+    display: none; margin-top: 6px; font-size: 13px; line-height: 1.5; color: var(--slate-dark);
+    background: var(--taupe-light); border-radius: 4px; padding: 8px 10px;
+  }
+  .milestone.show-info .info-text { display: block; }
+  .add-cal { margin-top: 5px; font-size: 12px; }
+  .add-cal a { color: var(--slate); font-weight: 700; margin-right: 10px; }
+  .contact-bar { display: none; }
+  @media (max-width: 600px) {
+    body { padding-bottom: 64px; }
+    .contact-bar {
+      display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+      background: var(--slate-dark); border-top: 3px solid var(--taupe);
+    }
+    .contact-bar a {
+      flex: 1; text-align: center; color: #fff; text-decoration: none; font-weight: 700;
+      font-size: 14px; padding: 14px 0; border-right: 1px solid rgba(255,255,255,0.15);
+    }
+    .contact-bar a:last-child { border-right: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="topbar"></div>
+  <div class="wrap">
+    <header>
+      <img class="logo" src="data:image/png;base64,{{LOGO_WORDMARK_B64}}" alt="Dunn Real Estate">
+      <div class="updated">Updated {{GENERATED_DATE}}</div>
+    </header>
+    <main>
+      <p class="eyebrow">{{EYEBROW}}</p>
+      <h1 class="property">{{PROPERTY_ADDRESS}}</h1>
+      <p class="client-names">Prepared for {{CLIENT_NAMES}}</p>
+      {{INTRO_HTML}}
+      {{KEYDATES_HTML}}
+      {{CALSUB_HTML}}
+      {{PROGRESS_HTML}}
+      <div class="legend">
+        <span><i class="dot done"></i>Complete</span>
+        <span><i class="dot in_progress"></i>In progress</span>
+        <span><i class="dot scheduled"></i>Scheduled</span>
+        <span><i class="dot not_started"></i>Coming up</span>
+      </div>
+      {{PHASES_HTML}}
+      {{AGENT_NOTES_HTML}}
+      {{CHECKLIST_HTML}}
+      {{TEAM_HTML}}
+      <div class="note-box">{{NOTE_TEXT}}</div>
+    </main>
+    <footer>
+      <div class="footer-main">
+        <img class="icon" src="data:image/png;base64,{{LOGO_ICON_B64}}" alt="">
+        <div class="footer-contact">
+          <div class="name">{{AGENT_NAME}}</div>
+          <div>{{BROKERAGE}}</div>
+          <div><a href="mailto:{{AGENT_EMAIL}}">{{AGENT_EMAIL}}</a>{{AGENT_PHONE_LINE}}</div>
+        </div>
+      </div>
+      {{VENDORS_HTML}}
+    </footer>
+  </div>
+  {{CONTACT_BAR_HTML}}
+  <script>
+    (function () {
+      // Closing countdown, computed live so it never goes stale
+      var el = document.getElementById('countdown');
+      if (el) {
+        var target = new Date(el.getAttribute('data-date') + 'T00:00:00');
+        var now = new Date(); now.setHours(0,0,0,0);
+        var days = Math.round((target - now) / 86400000);
+        var v = el.querySelector('.keydate-value'), s = el.querySelector('.keydate-sub');
+        if (days > 1) { v.textContent = days + ' days'; s.textContent = 'until closing'; }
+        else if (days === 1) { v.textContent = 'Tomorrow'; s.textContent = 'is closing day'; }
+        else if (days === 0) { v.textContent = 'Today'; s.textContent = 'is closing day'; }
+        else { v.textContent = 'Closed'; s.textContent = 'Congrats!'; }
+      }
+      // "What's this?" toggles
+      document.querySelectorAll('.info-btn').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var m = b.closest('.milestone'); m.classList.toggle('show-info');
+          b.setAttribute('aria-expanded', m.classList.contains('show-info'));
+        });
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      function sendHeight() {
+        var h = document.documentElement.scrollHeight;
+        try { window.parent.postMessage({ sellerLaunchFrameHeight: h }, '*'); } catch (e) {}
+      }
+      sendHeight();
+      window.addEventListener('load', sendHeight);
+      window.addEventListener('resize', sendHeight);
+      [100, 250, 500, 800, 1200, 1800, 2500, 3500].forEach(function (ms) { setTimeout(sendHeight, ms); });
+      if (window.ResizeObserver) { new ResizeObserver(sendHeight).observe(document.body); }
+    })();
+  </script>
+</body>
+</html>

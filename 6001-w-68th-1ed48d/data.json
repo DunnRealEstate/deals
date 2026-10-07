@@ -33,12 +33,14 @@
         {
           "label": "Earnest money delivered",
           "date": "Fri, Sept 11",
-          "status": "done"
+          "status": "done",
+          "start": "2026-09-11"
         },
         {
           "label": "Inspection period",
           "date": "Ended Fri, Sept 18",
-          "status": "done"
+          "status": "done",
+          "start": "2026-09-18"
         }
       ]
     },
@@ -89,13 +91,19 @@
           "label": "Final walkthrough",
           "date": "Fri, Oct 16 at 8:30 am",
           "status": "scheduled",
-          "note": "We'll make sure the house is in the same shape you remember it."
+          "note": "We'll make sure the house is in the same shape you remember it.",
+          "start": "2026-10-16T08:30",
+          "minutes": 30,
+          "location": "6001 W 68th St, Overland Park, KS 66204"
         },
         {
           "label": "Closing",
           "date": "Fri, Oct 16 at 9:00 am",
           "status": "scheduled",
-          "note": "Platinum Title, 10895 Lowell Ave, Suite 100, Overland Park (APEX 2 Building). Plan on 45 minutes to an hour."
+          "note": "Platinum Title, 10895 Lowell Ave, Suite 100, Overland Park (APEX 2 Building). Plan on 45 minutes to an hour.",
+          "start": "2026-10-16T09:00",
+          "minutes": 60,
+          "location": "Platinum Title, 10895 Lowell Ave Suite 100, Overland Park, KS 66210"
         },
         {
           "label": "Keys & possession",
@@ -132,7 +140,7 @@
   "agent_name": "Jared Dunn",
   "brokerage": "Real Broker",
   "agent_email": "jared@jareddunn.com",
-  "agent_phone": "",
+  "agent_phone": "(785) 766-5087",
   "vendors": [
     {
       "role": "Insurance",
@@ -161,5 +169,6 @@
       "name": "Edy's Lawn Care",
       "contact": "(913) 226-2452"
     }
-  ]
+  ],
+  "closing_date": "2026-10-16"
 }
