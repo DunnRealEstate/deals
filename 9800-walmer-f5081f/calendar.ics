@@ -26,23 +26,23 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:9800-walmer-f5081f-buyer-s-earnest-money-deposited@dunnrealestate
-DTSTAMP:20261007T155630Z
+DTSTAMP:20261008T154059Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260925
 SUMMARY:Buyer's earnest money deposited (9800 Walmer St)
 END:VEVENT
 BEGIN:VEVENT
 UID:9800-walmer-f5081f-appraisal@dunnrealestate
-DTSTAMP:20261007T155630Z
+DTSTAMP:20261008T154059Z
 DTSTART;TZID=America/Chicago:20261007T083000
 DTEND;TZID=America/Chicago:20261007T093000
 SUMMARY:Appraisal (9800 Walmer St)
-DESCRIPTION:The appraiser needs to get inside. Same prep as a showing works fine.
+DESCRIPTION:Appraiser came out Oct 7. Waiting on the report from the buyer's lender.
 LOCATION:9800 Walmer St\, Overland Park\, KS 66212
 END:VEVENT
 BEGIN:VEVENT
 UID:9800-walmer-f5081f-closing-possession@dunnrealestate
-DTSTAMP:20261007T155630Z
+DTSTAMP:20261008T154059Z
 DTSTART;TZID=America/Chicago:20261102T170000
 DTEND;TZID=America/Chicago:20261102T180000
 SUMMARY:Closing & possession (9800 Walmer St)
