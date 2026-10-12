@@ -26,11 +26,11 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:9800-walmer-f5081f-appraisal@dunnrealestate
-DTSTAMP:20261008T154059Z
+DTSTAMP:20261012T155844Z
 DTSTART;TZID=America/Chicago:20261007T083000
 DTEND;TZID=America/Chicago:20261007T093000
 SUMMARY:Appraisal (9800 Walmer St)
-DESCRIPTION:Appraiser came out Oct 7. Waiting on the report from the buyer's lender.
+DESCRIPTION:Appraisal came back and the appraisal contingency is satisfied. One less thing to worry about.
 LOCATION:9800 Walmer St\, Overland Park\, KS 66212
 END:VEVENT
 END:VCALENDAR
