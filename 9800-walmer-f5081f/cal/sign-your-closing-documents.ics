@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Dunn Real Estate//Under Contract//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Sign your closing documents
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9800-walmer-f5081f-sign-your-closing-documents@dunnrealestate
+DTSTAMP:20261023T180639Z
+DTSTART;TZID=America/Chicago:20261028T090000
+DTEND;TZID=America/Chicago:20261028T100000
+SUMMARY:Sign your closing documents (9800 Walmer St)
+DESCRIPTION:Since you're out of town closing weekend\, you'll sign ahead of time at Platinum Title\, 10895 Lowell Ave\, Suite 100\, Overland Park (APEX 2 Building). Bring your driver's license and your bank account info (or a blank check). You'll fill out a proceeds sheet there\, so no need to send wire info ahead of time.
+LOCATION:Platinum Title\, 10895 Lowell Ave Suite 100\, Overland Park\, KS 66210
+END:VEVENT
+END:VCALENDAR
