@@ -13,7 +13,7 @@
     {
       "label": "Closing",
       "value": "Mon, Nov 2",
-      "sub": "10:00 am"
+      "sub": "5:00 pm"
     },
     {
       "label": "Possession",
@@ -118,9 +118,9 @@
         },
         {
           "label": "Closing & possession",
-          "date": "Mon, Nov 2 at 10:00 am",
+          "date": "Mon, Nov 2 at 5:00 pm",
           "status": "scheduled",
-          "start": "2026-11-02T10:00",
+          "start": "2026-11-02T17:00",
           "minutes": 60
         }
       ]
