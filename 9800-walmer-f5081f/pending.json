@@ -8,7 +8,7 @@
     {
       "label": "Sign Closing Docs",
       "value": "Wed, Oct 28",
-      "sub": "11:00 am at Platinum Title"
+      "sub": "9:00 am at Platinum Title"
     },
     {
       "label": "Closing",
@@ -108,9 +108,9 @@
         },
         {
           "label": "Sign your closing documents",
-          "date": "Wed, Oct 28 at 11:00 am",
+          "date": "Wed, Oct 28 at 9:00 am",
           "status": "scheduled",
-          "start": "2026-10-28T11:00",
+          "start": "2026-10-28T09:00",
           "note": "Since you're out of town closing weekend, you'll sign ahead of time at Platinum Title, 10895 Lowell Ave, Suite 100, Overland Park (APEX 2 Building). Bring your driver's license and your bank account info (or a blank check). You'll fill out a proceeds sheet there, so no need to send wire info ahead of time.",
           "info": "You sign your side of the closing paperwork at the title company before closing day. The buyers still close and get keys on Nov 2.",
           "minutes": 60,
