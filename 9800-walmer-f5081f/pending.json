@@ -2,14 +2,9 @@
   "side": "seller",
   "property_address": "9800 Walmer St, Overland Park, KS 66212",
   "client_names": "Nick Zelie",
-  "generated_date": "October 29, 2026",
+  "generated_date": "November 2, 2026",
   "intro_text": "We're under contract. This is everything between now and closing, what's done and what's coming. I'll keep it updated as dates firm up, so check back whenever you want to know where things stand.",
   "key_dates": [
-    {
-      "label": "Walkthrough",
-      "value": "Sun, Nov 1",
-      "sub": "12:00 pm (buyers)"
-    },
     {
       "label": "Closing",
       "value": "Mon, Nov 2",
@@ -96,7 +91,7 @@
         {
           "label": "Buyer's final walkthrough",
           "date": "Sun, Nov 1 at 12:00 pm",
-          "status": "scheduled",
+          "status": "done",
           "start": "2026-11-01T12:00",
           "minutes": 30,
           "location": "9800 Walmer St, Overland Park, KS 66212"
