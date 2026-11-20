@@ -1,0 +1,194 @@
+{
+  "side": "buyer",
+  "property_address": "9722 Briar St, Overland Park, KS 66207",
+  "client_names": "Ryley & Sydney Haas",
+  "generated_date": "November 20, 2026",
+  "intro_text": "Here's everything between now and getting your keys. A lot of these dates don't exist yet, and that's normal this early. I'll fill them in as they land, so check back whenever you want to know where things stand.",
+  "key_dates": [
+    {
+      "label": "Earnest Money",
+      "value": "Sun, Nov 22",
+      "sub": "To Continental Title"
+    },
+    {
+      "label": "Inspections By",
+      "value": "Thu, Dec 3",
+      "sub": "End of inspection period"
+    },
+    {
+      "label": "Closing",
+      "value": "Thu, Dec 31",
+      "sub": "At Platinum Title, keys at funding"
+    }
+  ],
+  "phases": [
+    {
+      "name": "Contract & Inspections",
+      "milestones": [
+        {
+          "label": "Offer accepted",
+          "date": "Thu, Nov 19",
+          "status": "done",
+          "start": "2026-11-19"
+        },
+        {
+          "label": "Earnest money delivered",
+          "date": "Due Sun, Nov 22",
+          "status": "scheduled",
+          "start": "2026-11-22",
+          "note": "$12,000 to Continental Title, online or by check dropped at one of their offices. Sarah sent the instructions."
+        },
+        {
+          "label": "Inspection period",
+          "date": "Ends Thu, Dec 3",
+          "status": "scheduled",
+          "start": "2026-12-03",
+          "note": "Every inspection needs to be done and sent to the sellers by this date. Pick your inspector and I'll get it all scheduled."
+        },
+        {
+          "label": "Inspection resolution signed",
+          "date": "TBD",
+          "status": "not_started"
+        },
+        {
+          "label": "Seller's agreed repairs completed",
+          "date": "TBD",
+          "status": "not_started"
+        }
+      ]
+    },
+    {
+      "name": "Insurance, Appraisal & Loan",
+      "milestones": [
+        {
+          "label": "Homeowners insurance secured",
+          "date": "Before closing",
+          "status": "not_started",
+          "note": "Send the policy to your lender once it's bound."
+        },
+        {
+          "label": "Appraisal",
+          "date": "TBD",
+          "status": "not_started",
+          "note": "Tanner orders this after the inspection period ends."
+        },
+        {
+          "label": "Loan approval",
+          "date": "TBD",
+          "status": "not_started"
+        },
+        {
+          "label": "Title commitment",
+          "date": "TBD",
+          "status": "not_started"
+        },
+        {
+          "label": "Clear to close",
+          "date": "TBD",
+          "status": "not_started",
+          "note": "The lender's final sign-off. Once this comes in, we're basically there."
+        },
+        {
+          "label": "Review your closing disclosure",
+          "date": "At least 3 days before closing",
+          "status": "not_started",
+          "note": "Your final numbers. Read it when it lands and send me anything that looks off."
+        }
+      ]
+    },
+    {
+      "name": "Closing",
+      "milestones": [
+        {
+          "label": "Utilities set up in your name",
+          "date": "Turn on Thu, Dec 31",
+          "status": "not_started",
+          "note": "Evergy, Kansas Gas Service, WaterONE, Johnson County Wastewater, and trash (KC Disposal or another provider)."
+        },
+        {
+          "label": "Final walkthrough",
+          "date": "TBD",
+          "status": "not_started",
+          "note": "Usually the day before or the morning of closing. We'll make sure the house is in the same shape you remember it."
+        },
+        {
+          "label": "Closing",
+          "date": "Thu, Dec 31",
+          "status": "scheduled",
+          "note": "Platinum Title, 10895 Lowell Ave, Suite 120, Overland Park (APEX 2 Building). Time TBD. Plan on 45 minutes to an hour.",
+          "start": "2026-12-31",
+          "location": "Platinum Title, 10895 Lowell Ave Suite 120, Overland Park, KS 66210"
+        },
+        {
+          "label": "Keys & possession",
+          "date": "At funding",
+          "status": "not_started"
+        }
+      ]
+    }
+  ],
+  "agent_notes": "",
+  "checklist_title": "Before Closing Day",
+  "checklist_items": [
+    "Lock in homeowners insurance and send the policy to your lender",
+    "Don't open new credit, change jobs, or make big purchases until after closing",
+    "Answer lender requests quickly. Underwriting moves at the speed of your inbox",
+    "Schedule gas, electric, water, trash, and internet to start in your name on Dec 31",
+    "Review your closing disclosure as soon as it arrives and send me any questions",
+    "Never act on wiring instructions sent by email. Call Platinum Title at 913-491-5001 to confirm before sending a dime",
+    "Bring a photo ID to closing",
+    "Plan the move for after you have keys, not before"
+  ],
+  "team": [
+    {
+      "role": "Transaction Coordinator",
+      "name": "Sarah Fourt",
+      "contact": "sarah@executiveassistkc.com"
+    },
+    {
+      "role": "Title / Escrow",
+      "name": "Margaret Arnold, Platinum Title",
+      "contact": "913-491-5001 ext. 216 \u00b7 margaret@platinumtitlellc.com"
+    },
+    {
+      "role": "Lender",
+      "name": "Tanner Garver, Fairway",
+      "contact": "tanner.garver@fairwaymc.com"
+    }
+  ],
+  "note_text": "Dates are estimates and can shift with lender, appraisal, and title timelines. I'll update this page as things move, so there's no need to track any of this yourself.",
+  "agent_name": "Jared Dunn",
+  "brokerage": "Real Broker",
+  "agent_email": "jared@jareddunn.com",
+  "agent_phone": "(785) 766-5087",
+  "vendors": [
+    {
+      "role": "Insurance",
+      "name": "Patrick Wertzberger, Farmers",
+      "contact": "(913) 383-3276",
+      "url": "https://agents.farmers.com/ks/overland-park/patrick-wertzberger/"
+    },
+    {
+      "role": "Moving Company",
+      "name": "Moving Proz",
+      "contact": "(816) 945-6333",
+      "url": "https://movingproz.com/kansas-city/"
+    },
+    {
+      "role": "House Cleaning",
+      "name": "Fernanda Melo",
+      "contact": "(913) 257-6442"
+    },
+    {
+      "role": "Painting",
+      "name": "Daniel Munoz",
+      "contact": "(913) 915-0281"
+    },
+    {
+      "role": "Lawn Care",
+      "name": "Edy's Lawn Care",
+      "contact": "(913) 226-2452"
+    }
+  ],
+  "closing_date": "2026-12-31"
+}
