@@ -17,8 +17,8 @@
     },
     {
       "label": "Closing",
-      "value": "By Thu, Dec 31",
-      "sub": "Keys at funding"
+      "value": "Thu, Dec 31",
+      "sub": "At Platinum Title, keys at funding"
     }
   ],
   "phases": [
@@ -111,9 +111,11 @@
         },
         {
           "label": "Closing",
-          "date": "On or before Thu, Dec 31",
-          "status": "not_started",
-          "note": "Exact day and time to be set with the title company. Plan on 45 minutes to an hour."
+          "date": "Thu, Dec 31",
+          "status": "scheduled",
+          "note": "Platinum Title, 10895 Lowell Ave, Suite 100, Overland Park (APEX 2 Building). Time TBD. Plan on 45 minutes to an hour.",
+          "start": "2026-12-31",
+          "location": "Platinum Title, 10895 Lowell Ave Suite 100, Overland Park, KS 66210"
         },
         {
           "label": "Keys & possession",
@@ -129,9 +131,9 @@
     "Lock in homeowners insurance and send the policy to your lender",
     "Don't open new credit, change jobs, or make big purchases until after closing",
     "Answer lender requests quickly. Underwriting moves at the speed of your inbox",
-    "Schedule gas, electric, water, trash, and internet to start in your name on closing day",
+    "Schedule gas, electric, water, trash, and internet to start in your name on Dec 31",
     "Review your closing disclosure as soon as it arrives and send me any questions",
-    "Never act on wiring instructions sent by email. Call the title company at a number you've verified to confirm before sending a dime",
+    "Never act on wiring instructions sent by email. Call Platinum Title at 913-491-5001 to confirm before sending a dime",
     "Bring a photo ID to closing",
     "Plan the move for after you have keys, not before"
   ],

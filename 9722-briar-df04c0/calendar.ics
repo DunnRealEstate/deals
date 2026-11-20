@@ -26,14 +26,14 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:9722-briar-df04c0-offer-accepted@dunnrealestate
-DTSTAMP:20261120T172508Z
+DTSTAMP:20261120T172622Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Offer accepted (9722 Briar St)
 END:VEVENT
 BEGIN:VEVENT
 UID:9722-briar-df04c0-earnest-money-delivered@dunnrealestate
-DTSTAMP:20261120T172508Z
+DTSTAMP:20261120T172622Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:Earnest money delivered (9722 Briar St)
@@ -41,10 +41,19 @@ DESCRIPTION:$12\,000 to Continental Title. Sarah will send the instructions. Con
 END:VEVENT
 BEGIN:VEVENT
 UID:9722-briar-df04c0-inspection-period@dunnrealestate
-DTSTAMP:20261120T172508Z
+DTSTAMP:20261120T172622Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
 SUMMARY:Inspection period (9722 Briar St)
 DESCRIPTION:Every inspection needs to be done and sent to the sellers by this date. Pick your inspector and I'll get it all scheduled.
+END:VEVENT
+BEGIN:VEVENT
+UID:9722-briar-df04c0-closing@dunnrealestate
+DTSTAMP:20261120T172622Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Closing (9722 Briar St)
+DESCRIPTION:Platinum Title\, 10895 Lowell Ave\, Suite 100\, Overland Park (APEX 2 Building). Time TBD. Plan on 45 minutes to an hour.
+LOCATION:Platinum Title\, 10895 Lowell Ave Suite 100\, Overland Park\, KS 66210
 END:VEVENT
 END:VCALENDAR
