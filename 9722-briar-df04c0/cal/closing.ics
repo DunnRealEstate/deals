@@ -26,11 +26,11 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:9722-briar-df04c0-closing@dunnrealestate
-DTSTAMP:20261120T173257Z
+DTSTAMP:20261120T205752Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:Closing (9722 Briar St)
-DESCRIPTION:Platinum Title\, 10895 Lowell Ave\, Suite 100\, Overland Park (APEX 2 Building). Time TBD. Plan on 45 minutes to an hour.
-LOCATION:Platinum Title\, 10895 Lowell Ave Suite 100\, Overland Park\, KS 66210
+DESCRIPTION:Platinum Title\, 10895 Lowell Ave\, Suite 120\, Overland Park (APEX 2 Building). Time TBD. Plan on 45 minutes to an hour.
+LOCATION:Platinum Title\, 10895 Lowell Ave Suite 120\, Overland Park\, KS 66210
 END:VEVENT
 END:VCALENDAR

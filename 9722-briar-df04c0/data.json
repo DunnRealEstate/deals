@@ -7,7 +7,7 @@
   "key_dates": [
     {
       "label": "Earnest Money",
-      "value": "Mon, Nov 23",
+      "value": "Sun, Nov 22",
       "sub": "To Continental Title"
     },
     {
@@ -33,10 +33,10 @@
         },
         {
           "label": "Earnest money delivered",
-          "date": "Due Mon, Nov 23",
+          "date": "Due Sun, Nov 22",
           "status": "scheduled",
-          "start": "2026-11-23",
-          "note": "$12,000 to Continental Title. Sarah will send the instructions. Confirm them by phone before you send anything."
+          "start": "2026-11-22",
+          "note": "$12,000 to Continental Title, online or by check dropped at one of their offices. Sarah sent the instructions."
         },
         {
           "label": "Inspection period",
@@ -69,7 +69,8 @@
         {
           "label": "Appraisal",
           "date": "TBD",
-          "status": "not_started"
+          "status": "not_started",
+          "note": "Tanner orders this after the inspection period ends."
         },
         {
           "label": "Loan approval",
@@ -100,22 +101,23 @@
       "milestones": [
         {
           "label": "Utilities set up in your name",
-          "date": "Before closing",
-          "status": "not_started"
+          "date": "Turn on Thu, Dec 31",
+          "status": "not_started",
+          "note": "Evergy, Kansas Gas Service, WaterONE, Johnson County Wastewater, and trash (KC Disposal or another provider)."
         },
         {
           "label": "Final walkthrough",
           "date": "TBD",
           "status": "not_started",
-          "note": "We'll make sure the house is in the same shape you remember it."
+          "note": "Usually the day before or the morning of closing. We'll make sure the house is in the same shape you remember it."
         },
         {
           "label": "Closing",
           "date": "Thu, Dec 31",
           "status": "scheduled",
-          "note": "Platinum Title, 10895 Lowell Ave, Suite 100, Overland Park (APEX 2 Building). Time TBD. Plan on 45 minutes to an hour.",
+          "note": "Platinum Title, 10895 Lowell Ave, Suite 120, Overland Park (APEX 2 Building). Time TBD. Plan on 45 minutes to an hour.",
           "start": "2026-12-31",
-          "location": "Platinum Title, 10895 Lowell Ave Suite 100, Overland Park, KS 66210"
+          "location": "Platinum Title, 10895 Lowell Ave Suite 120, Overland Park, KS 66210"
         },
         {
           "label": "Keys & possession",
@@ -145,8 +147,8 @@
     },
     {
       "role": "Title / Escrow",
-      "name": "Cristin Hartranft, Platinum Title",
-      "contact": "913-491-5001 \u00b7 cristin@platinumtitlellc.com"
+      "name": "Margaret Arnold, Platinum Title",
+      "contact": "913-491-5001 ext. 216 \u00b7 margaret@platinumtitlellc.com"
     }
   ],
   "note_text": "Dates are estimates and can shift with lender, appraisal, and title timelines. I'll update this page as things move, so there's no need to track any of this yourself.",
