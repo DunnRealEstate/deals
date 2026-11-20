@@ -41,7 +41,7 @@
         {
           "label": "Inspection period",
           "date": "Ends Thu, Dec 3",
-          "status": "scheduled",
+          "status": "in_progress",
           "start": "2026-12-03",
           "note": "Every inspection needs to be done and sent to the sellers by this date. Pick your inspector and I'll get it all scheduled."
         },
