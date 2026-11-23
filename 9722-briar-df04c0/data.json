@@ -2,13 +2,13 @@
   "side": "buyer",
   "property_address": "9722 Briar St, Overland Park, KS 66207",
   "client_names": "Ryley & Sydney Haas",
-  "generated_date": "November 20, 2026",
+  "generated_date": "November 23, 2026",
   "intro_text": "Here's everything between now and getting your keys. A lot of these dates don't exist yet, and that's normal this early. I'll fill them in as they land, so check back whenever you want to know where things stand.",
   "key_dates": [
     {
-      "label": "Earnest Money",
-      "value": "Sun, Nov 22",
-      "sub": "To Continental Title"
+      "label": "Inspections",
+      "value": "Mon, Nov 30",
+      "sub": "9:00 am, Golden Home Inspections"
     },
     {
       "label": "Inspections By",
@@ -33,10 +33,10 @@
         },
         {
           "label": "Earnest money delivered",
-          "date": "Due Sun, Nov 22",
-          "status": "scheduled",
+          "date": "Sun, Nov 22",
+          "status": "done",
           "start": "2026-11-22",
-          "note": "$12,000 to Continental Title, online or by check dropped at one of their offices. Sarah sent the instructions."
+          "note": "$12,000 to Continental Title."
         },
         {
           "label": "Inspection period",
@@ -44,6 +44,15 @@
           "status": "in_progress",
           "start": "2026-12-03",
           "note": "Every inspection needs to be done and sent to the sellers by this date. Pick your inspector and I'll get it all scheduled."
+        },
+        {
+          "label": "Inspections",
+          "date": "Mon, Nov 30 at 9:00 am",
+          "status": "scheduled",
+          "note": "Golden Home Inspections: whole house, termite (WDO), and sewer scope. You're welcome to be there, or come at the end for the summary.",
+          "start": "2026-11-30T09:00",
+          "minutes": 180,
+          "location": "9722 Briar St, Overland Park, KS 66207"
         },
         {
           "label": "Inspection resolution signed",
@@ -148,7 +157,7 @@
     {
       "role": "Title / Escrow",
       "name": "Margaret Arnold, Platinum Title",
-      "contact": "913-491-5001 ext. 216 \u00b7 margaret@platinumtitlellc.com"
+      "contact": "913-491-5001 ext. 216 · margaret@platinumtitlellc.com"
     }
   ],
   "note_text": "Dates are estimates and can shift with lender, appraisal, and title timelines. I'll update this page as things move, so there's no need to track any of this yourself.",

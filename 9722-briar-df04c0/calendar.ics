@@ -26,30 +26,39 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:9722-briar-df04c0-offer-accepted@dunnrealestate
-DTSTAMP:20261120T211213Z
+DTSTAMP:20261123T191736Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Offer accepted (9722 Briar St)
 END:VEVENT
 BEGIN:VEVENT
 UID:9722-briar-df04c0-earnest-money-delivered@dunnrealestate
-DTSTAMP:20261120T211213Z
+DTSTAMP:20261123T191736Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Earnest money delivered (9722 Briar St)
-DESCRIPTION:$12\,000 to Continental Title\, online or by check dropped at one of their offices. Sarah sent the instructions.
+DESCRIPTION:$12\,000 to Continental Title.
 END:VEVENT
 BEGIN:VEVENT
 UID:9722-briar-df04c0-inspection-period@dunnrealestate
-DTSTAMP:20261120T211213Z
+DTSTAMP:20261123T191736Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
 SUMMARY:Inspection period (9722 Briar St)
 DESCRIPTION:Every inspection needs to be done and sent to the sellers by this date. Pick your inspector and I'll get it all scheduled.
 END:VEVENT
 BEGIN:VEVENT
+UID:9722-briar-df04c0-inspections@dunnrealestate
+DTSTAMP:20261123T191736Z
+DTSTART;TZID=America/Chicago:20261130T090000
+DTEND;TZID=America/Chicago:20261130T120000
+SUMMARY:Inspections (9722 Briar St)
+DESCRIPTION:Golden Home Inspections: whole house\, termite (WDO)\, and sewer scope. You're welcome to be there\, or come at the end for the summary.
+LOCATION:9722 Briar St\, Overland Park\, KS 66207
+END:VEVENT
+BEGIN:VEVENT
 UID:9722-briar-df04c0-closing@dunnrealestate
-DTSTAMP:20261120T211213Z
+DTSTAMP:20261123T191736Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:Closing (9722 Briar St)
