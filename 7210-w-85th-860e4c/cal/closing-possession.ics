@@ -26,10 +26,10 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:7210-w-85th-860e4c-closing-possession@dunnrealestate
-DTSTAMP:20261124T155735Z
+DTSTAMP:20261124T160226Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:Closing & possession (7210 W 85th St)
-DESCRIPTION:Time and location TBD. The buyer gets keys once the loan funds.
+DESCRIPTION:At Platinum Title. Time TBD. The buyer gets keys once the loan funds.
 END:VEVENT
 END:VCALENDAR

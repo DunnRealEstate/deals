@@ -18,7 +18,7 @@
     {
       "label": "Closing",
       "value": "Thu, Dec 10",
-      "sub": "Buyer gets keys at funding"
+      "sub": "At Platinum Title, buyer gets keys at funding"
     }
   ],
   "phases": [
@@ -109,7 +109,7 @@
           "date": "Thu, Dec 10",
           "status": "scheduled",
           "start": "2026-12-10",
-          "note": "Time and location TBD. The buyer gets keys once the loan funds."
+          "note": "At Platinum Title. Time TBD. The buyer gets keys once the loan funds."
         }
       ]
     }
@@ -133,6 +133,11 @@
       "role": "Transaction Coordinator",
       "name": "Sarah Fourt",
       "contact": "sarah@executiveassistkc.com"
+    },
+    {
+      "role": "Title / Escrow",
+      "name": "Platinum Title",
+      "contact": "913-491-5001"
     }
   ],
   "note_text": "Dates are estimates and can shift with lender, appraisal, and title timelines. I'll update this page as things move, so there's no need to track any of this yourself.",
