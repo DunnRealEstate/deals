@@ -1,0 +1,171 @@
+{
+  "side": "seller",
+  "property_address": "7210 W 85th St, Overland Park, KS 66212",
+  "client_names": "Katelyn & Stephen Bell",
+  "generated_date": "November 24, 2026",
+  "intro_text": "We're under contract. This is everything between now and closing, what's done and what's coming. It's a quick one, about two and a half weeks, so I'll keep this updated as dates land. Check back whenever you want to know where things stand.",
+  "key_dates": [
+    {
+      "label": "Inspections By",
+      "value": "Thu, Dec 3",
+      "sub": "End of buyer's inspection period"
+    },
+    {
+      "label": "Loan Approval By",
+      "value": "Sat, Dec 5",
+      "sub": "Buyer's lender deadline"
+    },
+    {
+      "label": "Closing",
+      "value": "Thu, Dec 10",
+      "sub": "Buyer gets keys at funding"
+    }
+  ],
+  "phases": [
+    {
+      "name": "Contract & Inspections",
+      "milestones": [
+        {
+          "label": "Offer accepted",
+          "date": "Mon, Nov 23",
+          "status": "done",
+          "start": "2026-11-23"
+        },
+        {
+          "label": "Buyer's earnest money deposited",
+          "date": "Due Thu, Nov 26",
+          "status": "scheduled",
+          "start": "2026-11-26",
+          "note": "$2,500 to Platinum Title."
+        },
+        {
+          "label": "Buyer's inspections",
+          "date": "By Thu, Dec 3",
+          "status": "not_started",
+          "start": "2026-12-03",
+          "note": "Not scheduled yet. I'll let you know as soon as the buyer's agent sends a time."
+        },
+        {
+          "label": "Inspection resolution signed",
+          "date": "TBD",
+          "status": "not_started"
+        },
+        {
+          "label": "Agreed repairs completed",
+          "date": "Before closing",
+          "status": "not_started",
+          "note": "Only if repairs are part of the resolution. Keep receipts for anything that gets done."
+        }
+      ]
+    },
+    {
+      "name": "Title, Appraisal & Loan",
+      "milestones": [
+        {
+          "label": "Title commitment",
+          "date": "TBD",
+          "status": "not_started"
+        },
+        {
+          "label": "Appraisal",
+          "date": "TBD",
+          "status": "not_started",
+          "note": "The appraiser needs access. Same prep as a showing."
+        },
+        {
+          "label": "Buyer's loan approval",
+          "date": "By Sat, Dec 5",
+          "status": "not_started",
+          "start": "2026-12-05",
+          "note": "This one's on the buyer's lender. I'll update it as soon as I hear."
+        },
+        {
+          "label": "Clear to close",
+          "date": "TBD",
+          "status": "not_started"
+        }
+      ]
+    },
+    {
+      "name": "Closing",
+      "milestones": [
+        {
+          "label": "Utilities transferred out of your name",
+          "date": "Effective Thu, Dec 10",
+          "status": "not_started"
+        },
+        {
+          "label": "Move out",
+          "date": "Before the final walkthrough",
+          "status": "not_started"
+        },
+        {
+          "label": "Buyer's final walkthrough",
+          "date": "TBD",
+          "status": "not_started"
+        },
+        {
+          "label": "Closing & possession",
+          "date": "Thu, Dec 10",
+          "status": "scheduled",
+          "start": "2026-12-10",
+          "note": "Time and location TBD. The buyer gets keys once the loan funds."
+        }
+      ]
+    }
+  ],
+  "agent_notes": "",
+  "checklist_title": "Before Closing Day",
+  "checklist_items": [
+    "Schedule gas, electric, water, trash, and internet to come out of your name on Dec 10 (not before)",
+    "Set up mail forwarding with USPS",
+    "Keep homeowners insurance active through closing. Cancel it after, not before",
+    "Take everything that isn't staying with the house per the contract",
+    "Have the house professionally cleaned, including inside the oven, fridge, and all drawers",
+    "Leave all keys, garage door openers, and mailbox keys on the kitchen counter",
+    "Leave appliance manuals and any warranty paperwork in a kitchen drawer",
+    "Keep receipts for any repairs from the inspection resolution",
+    "Bring a photo ID to closing",
+    "Never act on wiring instructions sent by email. If anything about your proceeds changes, call the title company at a number you already have"
+  ],
+  "team": [
+    {
+      "role": "Transaction Coordinator",
+      "name": "Sarah Fourt",
+      "contact": "sarah@executiveassistkc.com"
+    }
+  ],
+  "note_text": "Dates are estimates and can shift with lender, appraisal, and title timelines. I'll update this page as things move, so there's no need to track any of this yourself.",
+  "agent_name": "Jared Dunn",
+  "brokerage": "Real Broker",
+  "agent_email": "jared@jareddunn.com",
+  "agent_phone": "(785) 766-5087",
+  "vendors": [
+    {
+      "role": "House Cleaning",
+      "name": "Fernanda Melo",
+      "contact": "(913) 257-6442"
+    },
+    {
+      "role": "Junk Removal",
+      "name": "Cut Rate Junk Removal / Eric",
+      "contact": "(913) 961-6219"
+    },
+    {
+      "role": "Lawn Care",
+      "name": "Edy's Lawn Care",
+      "contact": "(913) 226-2452"
+    },
+    {
+      "role": "Handyman",
+      "name": "Jose Does it All / Jose",
+      "contact": "(816) 785-5452"
+    },
+    {
+      "role": "Painting",
+      "name": "Daniel Munoz",
+      "contact": "(913) 915-0281"
+    }
+  ],
+  "closing_date": "2026-12-10"
+}
