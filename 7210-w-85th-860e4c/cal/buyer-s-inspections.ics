@@ -26,10 +26,11 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:7210-w-85th-860e4c-buyer-s-inspections@dunnrealestate
-DTSTAMP:20261124T160226Z
-DTSTART;VALUE=DATE:20261203
-DTEND;VALUE=DATE:20261204
+DTSTAMP:20261124T161625Z
+DTSTART;TZID=America/Chicago:20261127T140000
+DTEND;TZID=America/Chicago:20261127T170000
 SUMMARY:Buyer's inspections (7210 W 85th St)
-DESCRIPTION:Not scheduled yet. I'll let you know as soon as the buyer's agent sends a time.
+DESCRIPTION:The buyer's inspection period ends Thu\, Dec 3.
+LOCATION:7210 W 85th St\, Overland Park\, KS 66212
 END:VEVENT
 END:VCALENDAR

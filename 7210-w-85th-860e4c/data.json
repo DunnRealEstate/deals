@@ -6,9 +6,9 @@
   "intro_text": "We're under contract. This is everything between now and closing, what's done and what's coming. It's a quick one, about two and a half weeks, so I'll keep this updated as dates land. Check back whenever you want to know where things stand.",
   "key_dates": [
     {
-      "label": "Inspections By",
-      "value": "Thu, Dec 3",
-      "sub": "End of buyer's inspection period"
+      "label": "Inspections",
+      "value": "Fri, Nov 27",
+      "sub": "2:00 pm, buyer's inspector"
     },
     {
       "label": "Loan Approval By",
@@ -40,10 +40,12 @@
         },
         {
           "label": "Buyer's inspections",
-          "date": "By Thu, Dec 3",
-          "status": "not_started",
-          "start": "2026-12-03",
-          "note": "Not scheduled yet. I'll let you know as soon as the buyer's agent sends a time."
+          "date": "Fri, Nov 27 at 2:00 pm",
+          "status": "scheduled",
+          "start": "2026-11-27T14:00",
+          "note": "The buyer's inspection period ends Thu, Dec 3.",
+          "minutes": 180,
+          "location": "7210 W 85th St, Overland Park, KS 66212"
         },
         {
           "label": "Inspection resolution signed",
