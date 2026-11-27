@@ -2,7 +2,7 @@
   "side": "seller",
   "property_address": "7210 W 85th St, Overland Park, KS 66212",
   "client_names": "Katelyn & Stephen Bell",
-  "generated_date": "November 24, 2026",
+  "generated_date": "November 27, 2026",
   "intro_text": "We're under contract. This is everything between now and closing, what's done and what's coming. It's a quick one, about two and a half weeks, so I'll keep this updated as dates land. Check back whenever you want to know where things stand.",
   "key_dates": [
     {
@@ -33,8 +33,8 @@
         },
         {
           "label": "Buyer's earnest money deposited",
-          "date": "Due Thu, Nov 26",
-          "status": "scheduled",
+          "date": "Thu, Nov 26",
+          "status": "done",
           "start": "2026-11-26",
           "note": "$2,500 to Platinum Title."
         },
